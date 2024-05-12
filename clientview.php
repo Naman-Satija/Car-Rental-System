@@ -137,6 +137,7 @@ $conn = Connect();
 <th width="20%">Rent End Date</th>
 <th width="10%">Distance</th>
 <th width="15%">Total Amount</th>
+<th width="15%">Cancel</th>
 </tr>
 </thead>
 <?php
@@ -149,6 +150,7 @@ $conn = Connect();
 <td><?php echo $row["rent_end_date"]; ?></td>
 <td><?php echo $row["distance"]; ?></td>
 <td>Rs. <?php echo $row["total_amount"]; ?></td>
+<td><a href="returncar.php?id=<?php echo $row["id"];?>"> Cancel </a></td>
 </tr>
 <?php        } ?>
                 </table>
